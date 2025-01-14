@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mazebank</title>
+  <link rel="stylesheet" href="mazebank style.css">
+</head>
+<body>
+  <nav>
+    <div id="logo">
+      <img src="bank.png" alt="Logo van Maze Bank, een fictieve bank">
+      <span>Maze Bank</span>
+    </div>
+    <ul>
+      <li><a href="#home" class="nav-button" data-section="home">Home</a></li>
+      <li><a href="#account" class="nav-button" data-section="account">Account</a></li>
+      <li><a href="#betaalrekening" class="nav-button" data-section="betaalrekening">Betaalrekening</a></li>
+      <li><a href="#overschrijvingen" class="nav-button" data-section="overschrijvingen">Overschrijvingen</a></li>
+      <li><a href="#Transactiegeschiedenis" class="nav-button" data-section="Transactiegeschiedenis">Transactiegeschiedenis</a></li>
+      <li><a href="#Beleggingen" class="nav-button" data-section="beleggingen">beleggingen</a></li>
+      <li><a href="#Crypto" class="nav-button" data-section="Crypto">Crypto</a></li>
+    
+    </ul>
+  </nav>
+
+  <main>
+    <section id="home" class="content-section active">
+      <h1>Home</h1>
+      <p> Stel je voor dat je een bank hebt die niet alleen je geld bewaart, maar ook jouw dromen helpt waar te maken. Een bank die begrijpt wat voor jou belangrijk is en je begeleidt in elke stap die je zet. Dat is Maze Bank. Hier helpen we jou bij het realiseren van je financiële doelen, of die nu groot of klein zijn.
+        Bij Maze Bank draait alles om jou. Of je nu wilt sparen voor een huis, werken aan een comfortabele toekomst, of simpelweg je financiële situatie beter wilt begrijpen – wij zijn er voor jou. We zijn meer dan een bank. We zijn een partner die met je meedenkt en je ondersteunt.
+        Onze innovatieve technologie maakt bankieren makkelijker dan ooit. Met onze gebruiksvriendelijke app kun je altijd en overal je bankzaken regelen. En als je behoefte hebt aan advies, staan onze deskundige medewerkers klaar om je te helpen. We luisteren naar je, begrijpen je situatie en bieden oplossingen die passen bij jouw wensen.
+        Bij Maze Bank bieden we een breed scala aan diensten die je helpen bij elke fase van je leven. Van betaalrekeningen voor je dagelijkse uitgaven, tot hypotheken voor je nieuwe huis en leningen voor grotere plannen. Maar we bieden ook mogelijkheden om te investeren en je vermogen op te bouwen, zodat je je toekomst veilig kunt stellen.
+        Onze missie is simpel: we willen jou helpen je financiële doelen te bereiken. We weten dat jouw doelen uniek zijn, en we staan naast je om je te helpen die doelen te bereiken, stap voor stap. Want bij Maze Bank draait het niet alleen om cijfers, maar om de mensen achter die cijfers – en dat ben jij.  
+        Welkom bij Maze Bank – de bank die jou begrijpt en samen met jou de toekomst bouwt.
+        Klaar om de volgende stap te zetten?
+        Ontdek wat Maze Bank voor jou kan betekenen. Wij staan voor je klaar. </p>
+    </section>
+
+    <section id="account" class="content-section">
+      <h1>Account</h1>
+      <p>Welkom op je accountpagina! Bij Maze Bank kun je eenvoudig al je bankzaken regelen, waar en wanneer je maar wilt. Of je nu je saldo wilt checken, betalingen wilt maken, of je gegevens wilt bijwerken, alles is overzichtelijk en binnen handbereik.
+        Onze gebruiksvriendelijke interface zorgt ervoor dat je altijd snel kunt zien waar je geld naartoe gaat en wat er op je rekening staat. Het beheren van je financiën is simpel, veilig en snel, zodat jij je kunt concentreren op de dingen die echt belangrijk zijn.
+        Mocht je vragen hebben of hulp nodig hebben, dan staat ons klantenserviceteam altijd voor je klaar om je verder te helpen. We zorgen ervoor dat je altijd de juiste ondersteuning hebt wanneer je die nodig hebt.</p>
+      <form id="login-form">
+        <label for="username">Gebruikersnaam:</label>
+        <input type="text" id="username" name="username" required>
+        
+        <label for="password">Wachtwoord:</label>
+        <input type="password" id="password" name="password" required>
+        
+        <label for="redirect">Ga naar:</label>
+        <select id="redirect" name="redirect">
+          <option value="home">Home</option>
+          <option value="account">Account</option>
+          <option value="betaalrekening">Betaalrekening</option>
+          <option value="omschrijving">Omschrijving</option>
+        </select>
+        
+        <button type="submit">Inloggen</button>
+      </form>
+      <p id="login-error" class="error-message" aria-live="polite"></p>
+    </section>
+
+    <section id="betaalrekening" class="content-section">
+      <h1>Betaalrekening</h1>
+      <p>Bij Maze Bank bieden we zowel betaalrekeningen als spaarrekeningen die je helpen je geld eenvoudig te beheren. Met onze betaalrekening kun je snel betalingen doen en je saldo altijd in de gaten houden. Voor je spaargeld hebben we een veilige en gemakkelijke spaarrekening waarmee je geld kunt opzij zetten voor de toekomst.
+        Of je nu betaalt of spaart, bij Maze Bank is alles snel, veilig en simpel geregeld.</p>
+      <h2>Rekeningbeheer Dashboard</h2>
+      <p>Uw Rekeningen</p>
+      <div class="rekening">
+        <div class="rekening-item">
+          <span>Betaalrekening</span>
+          <span>€456.00</span>
+        </div>
+        <div class="rekening-item">
+          <span>Spaarrekening</span>
+          <span>€239.50</span>
+        </div>
+      </div>
+      <button id="new-account-btn">Nieuwe Rekening Aanmaken</button>
+    </section>
+
+    <section id="overschrijvingen" class="content-section">
+      <h1>Overschrijvingen</h1>
+      <p>Bij Maze Bank maken we het eenvoudig om geld over te boeken van je betaalrekening naar je spaarrekening. Of je nu een klein bedrag wilt sparen of een groter bedrag wilt overboeken, alles kan snel en veilig binnen een paar klikken.
+        Met onze gebruiksvriendelijke app heb je altijd controle over je overschrijvingen. Je kunt eenvoudig je geld verplaatsen, zodat je altijd een goed overzicht hebt van je financiën. Veiligheid staat voorop, zodat je zonder zorgen kunt sparen.</p>
+      <form id="transfer-form">
+        <label for="from-account">Van rekening:</label>
+        <select id="from-account" name="from-account">
+          <option value="betaalrekening">Betaalrekening (€1500.00)</option>
+          <option value="spaarrekening">Spaarrekening (€500.00)</option>
+        </select>
+
+        <label for="to-account">Naar rekening:</label>
+        <select id="to-account" name="to-account">
+          <option value="spaarrekening">Spaarrekening</option>
+          <option value="betaalrekening">Betaalrekening</option>
+        </select>
+
+        <label for="amount">Bedrag:</label>
+        <input type="number" id="amount" name="amount" step="0.01" min="1" required>
+
+        <button type="submit">Overschrijven</button>
+      </form>
+      <p id="feedback" class="feedback-message" aria-live="polite"></p>
+    </section>
+
+    <section id="omschrijving" class="content-section">
+      <h1>Omschrijving</h1>
+      <p>Hier vindt u een beschrijving van onze diensten.</p>
+    </section>
+
+
+  <section id="Transactiegeschiedenis" class="content-section">
+  <div class="container">
+    <h1>Transactiegeschiedenis</h1>
+   
+  
+    <div class="filters">
+        <label for="typeFilter">Filter op type:</label>
+        <select id="typeFilter">
+            <option value="">Alle</option>
+            <option value="inkomend">Inkomend</option>
+            <option value="uitgaand">Uitgaand</option>
+        </select>
+
+        <label for="dateFilter">Filter op datum:</label>
+        <input type="date" id="dateFilter">
+    </div>
+
+  
+    <table id="transactionTable">
+        <thead>
+            <tr>
+                <th>Datum</th>
+                <th>Type</th>
+                <th>Bedrag (€)</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+</p>  
+  </section>
+</main>
+
+<section id="beleggingen" class="content-section">
+  <h1>Beleggingen</h1>
+  <div class="crypto-container">
+    <p>Beschikbaar saldo: <span id="saldo">€760.00</span></p>
+    <label for="categorie">Kies een categorie:</label>
+    <select id="categorie">
+      <option value="aandelen">Aandelen</option>
+      <option value="crypto">Crypto</option>
+    </select>
+
+    <label for="product">Kies een product:</label>
+    <select id="product">
+      <option value="TechCorp">TechCorp</option>
+      <option value="BitCoin">BitCoin</option>
+    </select>
+
+    <p>Huidige prijs: <span id="huidige-prijs">€120.00</span></p>
+    <p>In bezit: <span id="in-bezit">2</span> eenheden</p>
+
+    <label for="bedrag">Bedrag:</label>
+    <input type="number" id="bedrag" placeholder="Bijv. 240">
+
+    <button id="koop-btn">Kopen</button>
+    <button id="verkoop-btn">Verkopen</button>
+    <p id="investering-status"></p>
+
+  </div>
+</section>
+
+<section id="Crypto" class="content-section">
+  <div class="container">
+    <h1>Cryptovaluta Overzicht</h1>
+    <div class="crypto-balances">
+      <p>Bitcoin: €<span id="bitcoin-balance">0.00</span> (90000 per eenheid)</p>
+      <p>Ethereum: €<span id="ethereum-balance">0.00</span> (4800 per eenheid)</p>
+      <p>Litecoin: €<span id="litecoin-balance">0.00</span> (250 per eenheid)</p>
+    </div>
+    <div class="transaction-form">
+      <label for="crypto-select">Kies een cryptovaluta:</label>
+      <select id="crypto-select">
+        <option value="bitcoin">Bitcoin</option>
+        <option value="ethereum">Ethereum</option>
+        <option value="litecoin">Litecoin</option>
+      </select>
+      <label for="amount">Bedrag (in €):</label>
+      <input type="number" id="amount" min="0" value="100">
+      <button id="buy-button">Kopen</button>
+      <button id="sell-button">Verkopen</button>
+    </div>
+  
+</section>
+
+
+  <footer>
+    <p>&copy; LOS SANTOS</p>
+    
+  </footer>
+
+  <script src="apss.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
